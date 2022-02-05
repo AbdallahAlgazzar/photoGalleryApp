@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullScreenImageController" customModule="PhotoGalleryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="photoImageView" destination="EU3-X9-9YQ" id="7Q4-ep-gOh"/>
+                <outlet property="scrollView" destination="z1S-Vk-Bii" id="MyM-ff-xPs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1S-Vk-Bii">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EU3-X9-9YQ">
+                            <rect key="frame" x="10" y="10" width="394" height="798"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EU3-X9-9YQ" secondAttribute="bottom" constant="10" id="W0M-zZ-mdu"/>
+                        <constraint firstItem="EU3-X9-9YQ" firstAttribute="top" secondItem="z1S-Vk-Bii" secondAttribute="top" constant="10" id="bbQ-lg-ylZ"/>
+                        <constraint firstItem="EU3-X9-9YQ" firstAttribute="centerX" secondItem="z1S-Vk-Bii" secondAttribute="centerX" id="c0W-hf-LUU"/>
+                        <constraint firstAttribute="trailing" secondItem="EU3-X9-9YQ" secondAttribute="trailing" constant="10" id="dz4-EK-Ia0"/>
+                        <constraint firstItem="EU3-X9-9YQ" firstAttribute="leading" secondItem="z1S-Vk-Bii" secondAttribute="leading" constant="10" id="lns-hr-9HV"/>
+                        <constraint firstItem="EU3-X9-9YQ" firstAttribute="centerY" secondItem="z1S-Vk-Bii" secondAttribute="centerY" id="wmc-SX-u7V"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="z1S-Vk-Bii" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Aj-ID-PPH"/>
+                <constraint firstItem="z1S-Vk-Bii" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WHI-vU-36M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z1S-Vk-Bii" secondAttribute="trailing" id="X13-Om-0Dt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="z1S-Vk-Bii" secondAttribute="bottom" id="i4O-un-RIL"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

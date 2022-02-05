@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCell" customModule="PhotoGalleryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-W3-1pp">
+                        <rect key="frame" x="0.0" y="0.0" width="281" height="187"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZ9-Ke-EB1">
+                        <rect key="frame" x="8" y="139" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ctK-Sl-J4V"/>
+                            <constraint firstAttribute="height" constant="40" id="gao-nL-gGS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT3-1G-ghW">
+                        <rect key="frame" x="56" y="159" width="217" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bg3-W3-1pp" secondAttribute="bottom" id="3ei-Sq-XTK"/>
+                <constraint firstItem="Bg3-W3-1pp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BoW-kT-ahq"/>
+                <constraint firstItem="AZ9-Ke-EB1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="FeI-mx-2EU"/>
+                <constraint firstAttribute="bottom" secondItem="AZ9-Ke-EB1" secondAttribute="bottom" constant="8" id="MUf-Gw-kxa"/>
+                <constraint firstItem="bT3-1G-ghW" firstAttribute="centerY" secondItem="AZ9-Ke-EB1" secondAttribute="centerY" id="N6R-w2-rJF"/>
+                <constraint firstAttribute="trailing" secondItem="bT3-1G-ghW" secondAttribute="trailing" constant="8" id="adg-GD-250"/>
+                <constraint firstItem="bT3-1G-ghW" firstAttribute="leading" secondItem="AZ9-Ke-EB1" secondAttribute="trailing" constant="8" id="bRn-av-uWF"/>
+                <constraint firstAttribute="trailing" secondItem="Bg3-W3-1pp" secondAttribute="trailing" id="p5j-Lc-rjy"/>
+                <constraint firstItem="Bg3-W3-1pp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vEC-Mw-dwY"/>
+            </constraints>
+            <size key="customSize" width="281" height="187"/>
+            <connections>
+                <outlet property="photoImageView" destination="Bg3-W3-1pp" id="Bwh-E1-O8n"/>
+                <outlet property="sponsorProfileImageView" destination="AZ9-Ke-EB1" id="8Rh-w6-oWb"/>
+                <outlet property="tagLineLabel" destination="bT3-1G-ghW" id="EmD-nU-ptx"/>
+            </connections>
+            <point key="canvasLocation" x="-29.710144927536234" y="145.64732142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
